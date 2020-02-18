@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/segundo_fundo"
+    tools:context=".fragments.Animal">
+
+    <Button
+        android:id="@+id/btnCachorro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/cao"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnLeao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="62dp"
+        android:layout_marginLeft="62dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/leao"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCachorro" />
+
+    <Button
+        android:id="@+id/btnOvelha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="62dp"
+        android:layout_marginLeft="62dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/ovelha"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLeao"
+        app:layout_constraintVertical_bias="0.252" />
+
+    <Button
+        android:id="@+id/btnGato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="63dp"
+        android:layout_marginRight="63dp"
+        android:background="@drawable/gato"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnMacaco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginRight="64dp"
+        android:background="@drawable/macaco"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnGato" />
+
+    <Button
+        android:id="@+id/btnVaca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:background="@drawable/vaca"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMacaco"
+        app:layout_constraintVertical_bias="0.18" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:src="@drawable/direitos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
